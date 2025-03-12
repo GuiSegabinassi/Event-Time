@@ -25,7 +25,7 @@ h1 {
     text-align: center;
 }
 
-/* Adaptação do contador */
+/* ✅ Adaptação do contador */
 .countdown-container {
     display: flex;
     flex-wrap: wrap;
@@ -47,10 +47,10 @@ h1 {
 
 .countdown-el span {
     font-size: 1.2rem;
-    color: #000;
+    color: #555;
 }
 
-/* Botão para abrir o modal */
+/* ✅ Botão para abrir o modal */
 #open-modal-btn {
     background-color: #4caf50;
     color: #fff;
@@ -67,7 +67,7 @@ h1 {
     background-color: #45a049;
 }
 
-/* Estilização do modal */
+/* ✅ Estilização do modal */
 .modal {
     display: none;
     position: fixed;
@@ -78,6 +78,7 @@ h1 {
     background-color: rgba(0, 0, 0, 0.7);
     justify-content: center;
     align-items: center;
+    z-index: 9999; /* 🔥 Z-index alto para sobrepor tudo */
 }
 
 .modal-content {
@@ -102,7 +103,7 @@ h1 {
     color: #f00;
 }
 
-/* Estilização do formulário */
+/* ✅ Estilização do formulário */
 #event-form {
     display: flex;
     flex-direction: column;
@@ -143,7 +144,7 @@ h1 {
     background-color: #e53935;
 }
 
-/* RESPONSIVIDADE */
+/* ✅ 🔥 🔥 🔥 RESPONSIVIDADE 🔥 🔥 🔥 */
 @media (max-width: 768px) {
     h1 {
         font-size: 2.5rem;
@@ -155,7 +156,7 @@ h1 {
     }
 
     .big-text {
-        font-size: 2.5rem; /* Reduz o tamanho para caber na tela */
+        font-size: 2.5rem;
         margin: 0.5rem;
     }
 
@@ -170,7 +171,7 @@ h1 {
 
     .modal-content {
         padding: 1.5rem;
-        width: 95%;
+        width: 95%; /* ✅ Torna o modal mais responsivo */
     }
 
     .close-btn {
@@ -209,7 +210,7 @@ h1 {
 
     .modal-content {
         padding: 1rem;
-        width: 100%;
+        width: 100%; /* ✅ Ocupa quase toda a tela */
     }
 
     .modal-buttons button {
