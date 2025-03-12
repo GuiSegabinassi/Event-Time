@@ -115,6 +115,7 @@ h1 {
     border: 1px solid #ccc;
     border-radius: 6px;
     font-size: 1rem;
+    pointer-events: auto;
 }
 
 .modal-buttons {
@@ -167,6 +168,7 @@ h1 {
     #open-modal-btn {
         font-size: 1rem;
         padding: 10px 20px;
+        pointer-events: auto;
     }
 
     .modal-content {
@@ -176,16 +178,19 @@ h1 {
 
     .close-btn {
         font-size: 1.2rem;
+        pointer-events: auto;
     }
 
     #event-form input {
         font-size: 0.9rem;
         padding: 8px;
+        pointer-events: auto;
     }
 
     .modal-buttons button {
         padding: 8px 14px;
         font-size: 0.9rem;
+        pointer-events: auto;
     }
 }
 

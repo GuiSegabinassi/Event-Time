@@ -122,15 +122,6 @@ function formatTime(time) {
     return time < 10 ? `0${time}` : time;
 }
 
-// ✅ Impede o comportamento padrão de "toque" em dispositivos móveis
-document.addEventListener("touchstart", function(event) {
-    // Permite o comportamento normal em inputs e campos de seleção
-    if (event.target.tagName !== 'INPUT' && event.target.tagName !== 'BUTTON' && event.target.tagName !== 'SELECT') {
-        event.preventDefault();
-    }
-}, { passive: false });
-
-
 // ✅ Inicializa o contador ao carregar a página
 countdown();
 setInterval(countdown, 1000);
