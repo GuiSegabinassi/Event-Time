@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./snow.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 3rem;
+    margin-top: 2rem;
+    color: #000;
+    text-align: center;
+}
+
+/* Adaptação do contador */
+.countdown-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.big-text {
+    font-weight: normal;
+    font-size: 4rem;
+    line-height: 1;
+    margin: 0.5rem;
+    color: #8b0000;
+}
+
+.countdown-el {
+    text-align: center;
+}
+
+.countdown-el span {
+    font-size: 1.2rem;
+    color: #000;
+}
+
+/* Botão para abrir o modal */
+#open-modal-btn {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 2rem;
+    transition: background 0.3s ease;
+}
+
+#open-modal-btn:hover {
+    background-color: #45a049;
+}
+
+/* Estilização do modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 2rem;
+    width: 90%; /* ✅ Faz o modal se ajustar ao tamanho da tela */
+    max-width: 400px;
+    border-radius: 12px;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: #f00;
+}
+
+/* Estilização do formulário */
+#event-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#event-form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-buttons button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.modal-buttons button:hover {
+    background-color: #45a049;
+}
+
+#cancel-btn {
+    background-color: #f44336;
+}
+
+#cancel-btn:hover {
+    background-color: #e53935;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+        margin-top: 1rem;
+    }
+
+    .countdown-container {
+        gap: 0.5rem;
+    }
+
+    .big-text {
+        font-size: 2.5rem; /* Reduz o tamanho para caber na tela */
+        margin: 0.5rem;
+    }
+
+    .countdown-el span {
+        font-size: 1rem;
+    }
+
+    #open-modal-btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .modal-content {
+        padding: 1.5rem;
+        width: 95%;
+    }
+
+    .close-btn {
+        font-size: 1.2rem;
+    }
+
+    #event-form input {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    .modal-buttons button {
+        padding: 8px 14px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+        margin-top: 0.5rem;
+    }
+
+    .big-text {
+        font-size: 2rem;
+    }
+
+    .countdown-el span {
+        font-size: 0.8rem;
+    }
+
+    #open-modal-btn {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
+    .modal-content {
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .modal-buttons button {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+}
